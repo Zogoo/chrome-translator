@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+
+  "name": "diplom",
+  "description": "Hello.",
+  "version": "1.0",
+
+  "background": {
+    "persistent": false,
+    "scripts" : ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "css": ["mystyle.css"],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}

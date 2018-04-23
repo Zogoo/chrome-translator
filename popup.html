@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+      body {
+          min-width: 420px;
+          overflow-x: hidden;
+          font-family: Arial, sans-serif;
+          font-size: 12px;
+      }
+      input, textarea {
+          width: 420px;
+      }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <p>
+    <label for="selected">Selected word</label><br />
+    <textarea id="selected" class="color-red" name="selected" rows="6" cols="35">
+    </textarea>
+  </p>
+  <p>
+    <label for="translate">Translated word</label><br />
+    <textarea id="translate" name="translate" rows="6" cols="35">
+    </textarea>
+  </p>
+  <p>
+    <button id="search">Search it!</button>
+  </p>
+</body>
+</html>
