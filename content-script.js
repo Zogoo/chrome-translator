@@ -1,4 +1,5 @@
 function appendPopup(message) {
+  // TODO: Work with popup
   var d = document.createElement("div");
   d.innerText = message;
   document.body.appendChild(d);
