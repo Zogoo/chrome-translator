@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "diplom",
-  "description": "Hello.",
+  "name": "Translator",
+  "description": "Sample extension app for translator",
   "version": "1.0",
 
   "background": {
