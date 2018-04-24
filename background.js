@@ -17,7 +17,7 @@ chrome.runtime.onMessage.addListener(
                 chrome.runtime.sendMessage(Object.assign({
                   type: result_type
                 }, result));
-              } else {
+              } else if (request.code == "find-from-content") {
                 result_type = "result-for-content"
                 chrome.tabs.sendMessage(sender.tab.id, Object.assign({
                   type: result_type
